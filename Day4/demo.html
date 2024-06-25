@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Blog Site</title>
+  <link rel="stylesheet" href="demo.css">
+  <script>
+    // alert("Welcome")
+  </script>
+</head>
+
+<body>
+  <div id="header" class="header" style="padding: 5px 100px; color: white; background-color: blue;">
+    <h1 id="h1">Welcome to my Blog</h3>
+    <p>This is a subtitle</p>
+  </div>
+  <div class="container">
+    <div class="row1" style="display: flex;">
+      <div class="card">
+        <div class="image">
+          <img class="card-image" src="assets/image.png" height="100px" width="100%" alt="image1" />
+        </div>
+        <div class="description">
+          <h4>Blog Title 2</h4>
+          <p>Blog Description</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img class="card-image" src="assets/image.png" height="40" alt="image1" />
+        </div>
+        <div class="description">
+          <h4>Blog Title 3</h4>
+          <p>Blog Description</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img class="card-image" src="assets/image.png" height="40" alt="image1" />
+        </div>
+        <div class="description">
+          <h4>Blog Title 1</h4>
+          <p>Blog Description</p>
+        </div>
+      </div>
+    </div>
+    <div class="row2" style="display: flex;">
+      <div class="card">
+        <div class="image">
+          <img class="card-image" src="assets/image.png" height="40" alt="image1" />
+        </div>
+        <div class="description">
+          <h4>Blog Title 2</h4>
+          <p>Blog Description</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img class="card-image" src="assets/image.png" height="40" alt="image1" />
+        </div>
+        <div class="description">
+          <h4>Blog Title 3</h4>
+          <p>Blog Description</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img class="card-image" src="assets/image.png" height="40" alt="image1" />
+        </div>
+        <div class="description">
+          <h4>Blog Title 1</h4>
+          <p>Blog Description</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button type="submit" onclick="handleClick()">Click Me</button>
+  <script>
+    let header = document.getElementById("h1");
+    // console.log(header.innerText);
+    header.innerHTML = "New Header"
+
+    function handleClick() {
+      console.log("Button Clicked");
+      alert("Button Clicked")
+    }
+  </script>
+</body>
+
+</html>
